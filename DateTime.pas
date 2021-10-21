@@ -35,6 +35,10 @@ Begin
   end;
   result := s;
 end;
+function SeconsInHours(h : Integer): Integer;
+Begin
+  result := h*3600;
+end;
 begin
   Print(IsLeapYear(900));
   Print(IsLeapYear(800));
