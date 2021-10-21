@@ -39,6 +39,13 @@ function SeconsInHours(h : Integer): Integer;
 Begin
   result := h*3600;
 end;
+function IsYearOfApocalypse(Year : Integer): Boolean;
+Begin
+  var b := False;
+  if (Year = 1992) or (Year = 2005) or (Year = 2011) then
+    b := True;
+  result := b;
+end;
 begin
   Print(IsLeapYear(900));
   Print(IsLeapYear(800));
